@@ -84,7 +84,7 @@ app.delete("/api/notes/:id", (req, res) => {
   res.json(Notes);
 });
 
-const PORT = 5000;
+const PORT = process.env.PORT;
 
 app.listen(PORT, () => {
   console.log("node server ready on port:" + PORT);
